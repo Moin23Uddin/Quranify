@@ -46,16 +46,16 @@ async function main() {
         // Add the cleaned song to the list
         cleanedSong = cleanedSong.replace(/MPKmp/gi, '');
         cleanedSong = cleanedSong.replace(/(\S+)\s*$/, '$1.');
-        surah.innerHTML = surah.innerHTML + ` <li class="listbhai flex justify-between gap-[10px] hover:cursor-pointer py-3 px-3 my-3 border-[1px] rounded-[5px] border-gray-600 text-[15px] ">
+        surah.innerHTML = surah.innerHTML + ` <li class="listbhai flex justify-between gap-[10px] hover:cursor-pointer py-3 px-3 my-3 border-[1px] rounded-[5px] border-gray-600 text-[13px] text-slate-500 ">
                             <img class="invert" src="img/music.svg" alt="">
-                            <div class="info">
-
+                            <div class="info w-[178px]">
+    
                                 <div> ${cleanedSong}</div>
                                 <div>Moin</div>
-
+    
                             </div>
-                            <div class="playnow flex justify-center items-center">
-                                <span class="spanbhai text-[16px] width-[60px] p-3">Play Now</span>
+                            <div class="playnow flex justify-center items-center ">
+                                <span class="spanbhai text-[15px] width-[117px] p-3 text-slate-50">Play Now</span>
                                 <img class="invert" src="img/play.svg" alt="">
                             </div>
                         
@@ -63,7 +63,6 @@ async function main() {
        </li>`;
     }
     console.log(surah.innerHTML)
-    var audio = new Audio(songs[0]);
-    // audio.play();
+
 }
-main()
+main() 
