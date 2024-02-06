@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/output.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-fontroboto bg-black text-slate-50 ">
+    <div class="w-screen flex bg-black ">
+        <div class="left w-[25vw] p-3 text-white ">
+            <div class="home m-[5px] bg-gray-900 rounded-lg p-3">
+                <div class="logo">
+                    <img class="invert" src="img/quranlogo.svg" alt="logo">
+                </div>
+                <ul>
+                    <li class="home_icon w-[34px] flex font-bold gap-4 pt-4"><img class="invert" src="img/home.svg"
+                            alt="home">Home</li>
+                    <li class="home_icon w-[34px] flex font-bold  gap-4 pt-4"><img class="invert" src="img/search.svg"
+                            alt="search">Search</li>
+                </ul>
+            </div>
+            <div class="library m-[5px] bg-gray-900 text-white rounded-lg min-h-[80vh] relative">
+                <div class="heading w-full flex gap-4 px-4 py-6 font-bold items-center ">
+                    <img class="playlist_svc invert w-[30px]" src=" img/playlist.svg" alt="">
+                    <h1>Your library</h1>
+                </div>
+                <div class="songList p-4">
+
+                    <ul class="ulsong py-0 px-3 list-decimal mr-[20px] ">
+                        <li class="library_music invert flex ">
+                      
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer_left flex text-xs text-gray-600 gap-2 absolute bottom-0 pb-[8px]">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="right w-[75vw] bg-gray-900 rounded-lg  my-[16px] relative ">
+
+
+            <div class="header_right flex justify-between bg-gray-950">
+                <div class="nav p-5">
+                    <div class="hamburgerContainer">
+
+                        <img width="40" class="invert hamburger" src="img/hamburger.svg" alt="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
+                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 18L14.2929 12.7071C14.6262 12.3738 14.7929 12.2071 14.7929 12C14.7929 11.7929 14.6262 11.6262 14.2929 11.2929L9 6"
+                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="buttons mx-3">
+                    <button class="signupbtn bg-gray-950 font-bold text-lg cursor-pointer text-slate-400 hover:text-[19px] mr-[20px] hover:text-white ">Sign up</button>
+                    <button class="loginbtn bg-white rounder-full text-[16px] rounded-full py-[10px] mt-[20px] text-black font-bold cursor-pointer w-[79px] hover:text-gray-950 hover:text-[19px] ">Log in</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylists p-[16px]">
+                <h1 class="text-2xl">Quran Playlists</h1>
+                <div class="cardContainer max-h-[70vh] overflow-y-scroll flex gap-2 flex-wrap mt-2">
+                    <div class="card w-[200px] p-[10px] rounded-md bg-gray-950 relative">
+                        <div
+                            class="play transition ease-in-out hover:-translate-y-1 hover:scale-110  absolute top-[81px] right-[17px] w-[28px] h-[28px] bg-gray-800 rounded-[50%] p-[4px] flex items-center justify-center border-2 border-slate-700">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
+
+                        <img class="w-full object-contain pt-[10px]"
+                            src="https://pbs.twimg.com/media/Fk2Hka5XgAEmUbH.jpg:large" alt="">
+                        <h2 class="card_heading pt-[10px]">Sheikh Sudais</h2>
+                        <p class="card_heading pt-[10px]">Delight your mood</p>
+                    </div>
+
+
+
+
+                </div>
+                <div class="playbar flex justify-center items-center fixed bottom-[30px] invert bg-slate-200  rounded-[14px] w-[70vw] min-h-[40px] p-3">
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                    <div class="abovebar">
+
+
+                        <div class="songinfo">
+
+                        </div>
+                        <div class="songbuttons flex justify-center gap-4 ">
+                            <img width="35" id="previous" src="img/prevsong.svg" alt="">
+                            <img width="35" id="play" src="img/play.svg" alt="">
+                            <img width="35" id="next" src="img/nextsong.svg" alt="">
+                        </div>
+                        <div class="timevol">
+
+
+                            <div class="songtime">
+
+                            </div>
+                            <div class="volume">
+                                <img width="25" src="img/volume.svg" alt="">
+                                <div class="range">
+                                    <input type="range" name="volume" id="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
