@@ -35,7 +35,7 @@ async function getsongs(folder) {
         }
 
     }
-    console.log(songs,"ami joss")
+    console.log(songs, "ami joss")
     let surah = document.querySelector(".songList").getElementsByTagName("ul")[0];
     surah.innerHTML = ""
     let songMapping = {};
@@ -52,11 +52,11 @@ async function getsongs(folder) {
         songMapping[cleanedSongName] = originalSongName;
 
         // Add the cleaned song name to the list
-        surah.innerHTML = surah.innerHTML + ` <li class="listbhai flex justify-between gap-[10px] hover:cursor-pointer py-3 px-3 my-3 border-[1px] rounded-[5px] border-red-600 text-[13px] text-slate-500 ">
+        surah.innerHTML = surah.innerHTML + ` <li class="listbhai flex justify-between gap-[10px] hover:cursor-pointer py-3 px-3 my-3 border-[1px] rounded-[5px] border-slate-600 text-[16px] text-slate-500 ">
                             <img class="invert" src="img/music.svg" alt="">
                             <div class="info w-[178px]">
                                 <div>${cleanedSongName}</div>
-                                <div>Moin</div>
+                                <div></div>
                             </div>
                             <div class="playnow flex justify-center items-center ">
                                 <span class="spanbhai text-[15px] width-[117px] p-3 text-slate-50">Play Now</span>
@@ -129,7 +129,7 @@ async function displayAlbums() {
 
             // Append the HTML to cardContainer
             cardContainer.innerHTML += `
-                <div data-folder="${folder}" class="card w-[200px] p-[10px] rounded-md bg-gray-950 relative">
+                <div data-folder="${folder}" class="card w-[200px] p-[10px] rounded-md bg-gray-950 relative cursor-pointer hover:bg-slate-800">
                     <div class="play transition ease-in-out hover:-translate-y-1 hover:scale-110 absolute top-[81px] right-[17px] w-[28px] h-[28px] bg-gray-800 rounded-[50%] p-[4px] flex items-center justify-center border-2 border-slate-700">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5" stroke-linejoin="round" />
@@ -211,7 +211,7 @@ async function main() {
         currentsurah.pause()
         console.log(songs)
         console.log("Next clicked")
-      
+
         let index = songs.indexOf(currentsurah.src.split("/").slice(-1)[0])
         console.log(index)
         if ((index + 1) < songs.length) {
