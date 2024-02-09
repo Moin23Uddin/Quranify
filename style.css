@@ -14,3 +14,32 @@
 }
 
 /* For Firefox */
+.seekbar {
+    height: 4px;
+    width: 98%;
+    background: rgb(5, 15, 77);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 8px;
+    margin: 6px;
+    cursor: pointer;
+}
+
+.circle {
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+    background-color: rgb(5, 5, 61);
+    position: relative;
+    bottom: 5px;
+    left: 0%;
+    transition: left 0.5s;
+}
+
+@media (max-width: 1200px) {
+    .seekbar {
+       
+        bottom: 1px;
+      
+    }
+}

@@ -3,7 +3,10 @@ module.exports = {
   content: ["*html", "*.js"],
   theme: {
     extend: {
-
+      screens: {
+        'tall': { 'raw': '(max-width: 1400px)' },
+       
+      },
       fontFamily:{
         'fontroboto':['Roboto', 'sans-serif'],
         'fonthonk':["Honk", "system-ui"],

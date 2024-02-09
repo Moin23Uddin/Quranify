@@ -4,14 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-    <title>Document</title>
+    <title>Quranify.com</title>
     <link rel="stylesheet" href="/css/output.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="font-fontroboto bg-black text-slate-50 ">
     <div class="w-screen flex bg-black ">
-        <div class="left w-[25vw] p-3 text-white ">
+        <div
+            class="left1 w-[25vw] p-3 text-white tall:absolute  tall:bg-black tall:left-[-100%]  tall:transition-all ease-out tall:duration-[500ms] tall:z-[3]  tall:w-[300px]">
+            <div class="close tall:absolute tall:top-[25px] tall:right-[31px] tall:w-[29px] hidden tall:block">
+                <img width="30" class="invert" src="img/close.svg" alt="">
+            </div>
             <div class="home m-[5px] bg-gray-900 rounded-lg p-3">
                 <div class="logo">
                     <img class="invert" src="img/quranlogo.svg" alt="logo">
@@ -31,7 +35,7 @@
                 <div class="songList pb-6">
 
                     <ul class="ulsong py-0 px-3 list-decimal mr-[20px] ">
-                    
+
                     </ul>
                 </div>
 
@@ -47,14 +51,13 @@
             </div>
 
         </div>
-        <div class="right w-[75vw] bg-gray-900 rounded-lg  my-[16px] relative ">
+        <div class="right w-[74vw] bg-gray-900 rounded-lg  my-[16px] relative tall:w-full ">
 
 
             <div class="header_right flex justify-between bg-gray-950">
                 <div class="nav p-5">
-                    <div class="hamburgerContainer">
-
-                        <img width="40" class="invert hamburger" src="img/hamburger.svg" alt="">
+                    <div class="hamburgerContainer flex justify-center items-center gap-4 ">
+                        <img class="   w-[40px] h-[40px] hidden tall:block" src="img/hamburger.svg" alt="">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
@@ -72,60 +75,45 @@
                         class="signupbtn bg-gray-950 font-bold text-lg cursor-pointer text-slate-400 hover:text-[19px] mr-[20px] hover:text-white ">Sign
                         up</button>
                     <button
-                        class="loginbtn bg-white rounder-full text-[16px] rounded-full py-[10px] mt-[20px] text-black font-bold cursor-pointer w-[79px] hover:text-gray-950 hover:text-[19px] ">Log
+                        class="loginbtn bg-white rounder-full text-[16px] rounded-full py-[10px] mt-[10px] text-black font-bold cursor-pointer w-[79px] hover:text-gray-950 hover:text-[19px] ">Log
                         in</button>
                 </div>
             </div>
-            <div class="spotifyPlaylists p-[16px]">
+            <div class="spotifyPlaylists p-[16px] ">
                 <h1 class="text-2xl">Quran Playlists</h1>
-                <div class="cardContainer max-h-[70vh] overflow-y-scroll flex gap-2 flex-wrap mt-2">
-                    <div class="card w-[200px] p-[10px] rounded-md bg-gray-950 relative">
-                        <div
-                            class="play transition ease-in-out hover:-translate-y-1 hover:scale-110  absolute top-[81px] right-[17px] w-[28px] h-[28px] bg-gray-800 rounded-[50%] p-[4px] flex items-center justify-center border-2 border-slate-700">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </div>
-
-
-                        <img class="w-full object-contain pt-[10px]"
-                            src="https://pbs.twimg.com/media/Fk2Hka5XgAEmUbH.jpg:large" alt="">
-                        <h2 class="card_heading pt-[10px]">Sheikh Sudais</h2>
-                        <p class="card_heading pt-[10px]">Delight your mood</p>
-                    </div>
+                <div class="cardContainer max-h-[70vh] overflow-y-auto flex gap-2 flex-wrap flex-grow-1 mt-2">
+                   
 
 
 
 
                 </div>
                 <div
-                    class="playbar flex justify-center items-center fixed bottom-[30px] invert bg-slate-200  rounded-[14px] w-[70vw] min-h-[40px] p-3">
+                    class="playbar flex justify-center items-center fixed bottom-[30px] tall:z-[2]     bg-[#030712]  rounded-[14px] w-[70vw] min-h-[40px] p-3 tall:w-[98vw]">
                     <div class="seekbar">
                         <div class="circle">
 
                         </div>
                     </div>
-                    <div class="abovebar">
+                    <div class="abovebar flex justify-between w-100% mt-[20px] tall:flex tall:flex-col tall:items-center gap-[53px] tall:gap-[0px]">
 
 
-                        <div class="songinfo">
+                        <div class="songinfo text-slate-500 mt-[10px]">
 
                         </div>
-                        <div class="songbuttons flex justify-center gap-4 ">
+                        <div class="songbuttons flex justify-center gap-4 px-3 pb-[15px] ">
                             <img width="35" id="previous" src="img/prevsong.svg" alt="">
                             <img width="35" id="play" src="img/play.svg" alt="">
                             <img width="35" id="next" src="img/nextsong.svg" alt="">
                         </div>
-                        <div class="timevol">
+                        <div class="timevol flex justify-evenly tall:flex-col  ">
 
 
-                            <div class="songtime">
+                            <div class="songtime  text-slate-500 px-3 pb-[2px]">
 
                             </div>
-                            <div class="volume">
-                                <img width="25" src="img/volume.svg" alt="">
+                            <div class="volume flex gap-[20px] tall:flex-col tall:gap-[0px]">
+                                <img class="mb-[19px] " width="25" src="img/volume.svg" alt="">
                                 <div class="range">
                                     <input type="range" name="volume" id="">
                                 </div>
